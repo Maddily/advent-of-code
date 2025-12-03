@@ -40,7 +40,7 @@ function findMaxJoltage(bank: string) {
     digits.push(battery);
   }
 
-  // The maximum joltage must consist of two digits. The two highest ones are from the left.
+  // The maximum joltage must consist of 12 digits. The two highest ones are from the left.
   const maxJoltage = digits
     .slice(0, 12)
     .reduce((acc, digit) => acc + digit, "");
